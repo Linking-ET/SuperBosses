@@ -55,7 +55,7 @@ public class LootJSReport {
                 "    event\n" +
                 "        .addLootTypeModifier([LootType.ENTITY])\n" +
                 "        .entityPredicate(entity => {\n" +
-                "        return entity.asKJS().fullNBT.ForgeData.SuperBoss == 1\n" +
+                "        return entity.asKJS().fullNBT.ForgeData?.SuperBoss == 1\n" +
                 "        })\n" +
                 "        .modifyLoot(Ingredient.getAll(), (itemStack) => {\n" +
                 "            itemStack.setCount(itemStack.getCount() * " + SuperBossesCommonConfig.SUPER_BOSS_LOOT_MULTIPLIER.get() + ");\n" +
@@ -68,7 +68,7 @@ public class LootJSReport {
                 "    event\n" +
                 "        .addLootTypeModifier([LootType.ENTITY])\n" +
                 "        .entityPredicate(entity => {\n" +
-                "        return entity.asKJS().fullNBT.ForgeData.SuperDuperBoss == 1\n" +
+                "        return entity.asKJS().fullNBT.ForgeData?.SuperDuperBoss == 1\n" +
                 "        })\n" +
                 "        .modifyLoot(Ingredient.getAll(), (itemStack) => {\n" +
                 "            itemStack.setCount(itemStack.getCount() * " + SuperBossesCommonConfig.SUPER_DUPER_BOSS_LOOT_MULTIPLIER.get() + ");\n" +
@@ -81,7 +81,7 @@ public class LootJSReport {
                 "    event\n" +
                 "        .addLootTypeModifier([LootType.ENTITY])\n" +
                 "        .entityPredicate(entity => {\n" +
-                "        return entity.asKJS().fullNBT.ForgeData.MegaBoss == 1\n" +
+                "        return entity.asKJS().fullNBT.ForgeData?.MegaBoss == 1\n" +
                 "        })\n" +
                 "        .modifyLoot(Ingredient.getAll(), (itemStack) => {\n" +
                 "            itemStack.setCount(itemStack.getCount() * " + SuperBossesCommonConfig.MEGA_BOSS_LOOT_MULTIPLIER.get() + ");\n" +
@@ -94,7 +94,7 @@ public class LootJSReport {
                 "    event\n" +
                 "        .addLootTypeModifier([LootType.ENTITY])\n" +
                 "        .entityPredicate(entity => {\n" +
-                "        return entity.asKJS().fullNBT.ForgeData.UltraMegaBoss == 1\n" +
+                "        return entity.asKJS().fullNBT.ForgeData?.UltraMegaBoss == 1\n" +
                 "        })\n" +
                 "        .modifyLoot(Ingredient.getAll(), (itemStack) => {\n" +
                 "            itemStack.setCount(itemStack.getCount() * " + SuperBossesCommonConfig.ULTRA_MEGA_BOSS_LOOT_MULTIPLIER.get() + ");\n" +
